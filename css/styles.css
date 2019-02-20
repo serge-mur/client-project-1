@@ -1,0 +1,62 @@
+:root {
+    /* main colors */
+    --green: #90de23;
+    --light-green: #f1fae8;
+    --blue: #0074ff;
+    --yellow: #ffe500; 
+    --light-gray: #f8f8f8;     
+    --gray: #b3b3b3;
+    --dark-gray: #666666;  
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* header */
+.top-menu-line {
+    background-color: #f8f8f8;
+}
+.main-menu-line {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+#offCanvas, #offCanvasRight {
+    background-color: #fff;
+    z-index: 1080;
+}
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+@media (min-width: 576px) {
+
+}
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+ 
+@media (max-width: 575px) { 
+
+}
+@media (max-width: 767px) { 
+
+}
+
+/* other css */
