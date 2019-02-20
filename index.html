@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="libs/js-offcanvas/js-offcanvas.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
     <link rel="stylesheet" href="css/styles.css">
 
     <title>Catalog page</title>
@@ -17,14 +18,14 @@
     <div class="c-offcanvas-content-wrap">
 
         <header id="header">
-            
+
             <a href="#offCanvas" id="triggerButton" class="btn btn-primary my-2 d-lg-none">Menu</a>
 
             <div class="top-menu-line">
                 <div class="container">
                     <div class="row">
                         <div class="col-1">
-                            <div>Москва</div>
+                            <div class="nav-link">Москва</div>
                         </div>
                         <div class="col-11">
                             <ul class="nav" id="top-menu">
@@ -66,8 +67,8 @@
                         </form>
                     </div>
                     <div class="col-4">
-                        <button class="btn btn-primary">1</button>
-                        <button class="btn btn-primary">2</button>
+                        <button class="btn btn-primary"><i class="fas fa-user"></i></button>
+                        <button class="btn btn-primary"><i class="fas fa-heart"></i></button>
                         <button class="btn btn-primary">Корзина</button>
                     </div>
                 </div>
@@ -80,7 +81,8 @@
 
                             <ul class="nav" id="main-menu">
                                 <li class="nav-item">
-                                    <a class="btn btn-secondary nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Каталог товаров</a>
+                                    <a class="btn btn-secondary nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">Каталог товаров</a>
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                         <a class="dropdown-item" href="#">Action</a>
                                         <a class="dropdown-item" href="#">Another action</a>
@@ -120,13 +122,13 @@
                                 </li>
                                 <li class="breadcrumb-item active" aria-current="page">Data</li>
                             </ol>
-                        </nav>                        
+                        </nav>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-12">
-                        <a href="#" class="d-block" id="banner-1">
+                        <a href="#" class="d-block text-center" id="banner-1">
                             <img class="img-fluid" src="https://via.placeholder.com/1080x140" alt="">
                         </a>
                     </div>
@@ -136,39 +138,62 @@
                     <div class="col-12 col-lg-3">
                         <aside id="sidebar">
                             <h3>Подкатегории</h3>
+
                             <h3>Производители</h3>
+                            <div class="check-group" id="manufacturers">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        Default checkbox
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                    <label class="form-check-label" for="defaultCheck2">
+                                        Disabled checkbox
+                                    </label>
+                                </div>
+                            </div>
+
                             <h3>Поставщики</h3>
 
                         </aside>
                     </div>
                     <div class="col-12 col-lg-9">
 
-                        <h1 class="d-inline-block">Cards</h1><span>2082 товаров в категории</span>
+                        <h1 class="d-inline-block">Овощные консервы</h1>
+                        <span>2082 товаров в категории</span>
 
-                        <div class="filters-block">
+                        <div class="sorting-block my-4">
                             <div class="row">
                                 <div class="col-6">
-                                        по популярности | по цене за единицу | по названию
+                                    <div class="sorting-block-left">
+                                        <span>по популярности</span> | <a href="#">по цене за единицу</a> | <a href="#">по названию</a>
+                                    </div>
                                 </div>
-                                <div class="col-6">
-                                        товаров на странице
+                                <div class="col-6 text-right">
+                                    <div class="sorting-block-right">
+                                        <span>товаров на странице</span>
+                                    </div>
                                 </div>
                             </div>
 
                         </div>
 
-                        <a href="#offCanvas" id="triggerButtonRight" class="btn btn-primary my-2 d-lg-none">Filters</a> 
-
                         <div class="row mb-4">
                             <div class="col-12 col-sm-6 col-md-4">
                                 <div class="card">
-                                    <img src="https://via.placeholder.com/575x275" class="card-img-top" alt="...">
+                                    <img src="https://via.placeholder.com/180x180" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                                            content.
-                                        </p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        <h5 class="card-title">Икра "ЕКО" из кабачков, 12 шт по 0,48 кг</h5>
+                                        <div class="card-text">
+                                            <p>Производитель: <a href="#">Группа компаний "Лакония"</a></p>
+                                            <p>Упаковка: 12 шт. x0,48 кг ( 5,76 кг )</p>
+                                        </div>
+                                        <div class="card-price">
+                                            <p>480,00 <i class="fas fa-ruble-sign"></i> / 12 шт.</p>
+                                        </div>
+                                        <a href="#" class="btn btn-primary">В корзину</a>
                                     </div>
                                 </div>
                             </div>
@@ -212,40 +237,44 @@
                     <div class="col-12 col-md-6 col-lg-4">
                         <ul class="nav flex-column">
                             <li class="nav-item">
-                                <a class="nav-link active" href="#">Active</a>
+                                <a class="nav-link" href="#">О компании</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
+                                <a class="nav-link" href="#">Поставщики</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
+                                <a class="nav-link" href="#">Производители</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Контакты</a>
                             </li>
                         </ul>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
                         <ul class="nav flex-column">
                             <li class="nav-item">
-                                <a class="nav-link active" href="#">Active</a>
+                                <a class="nav-link" href="#">Доставка и оплата</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
+                                <a class="nav-link" href="#">Как сделать заказ</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
+                                <a class="nav-link" href="#">Поставщикам и производителям</a>
                             </li>
                         </ul>
                     </div>
+
                     <div class="col-12 col-lg-4">
 
                         <ul class="nav flex-column">
                             <li class="nav-item">
-                                <a class="nav-link active" href="#">8 (495) 215-10-36</a>
+                                <a class="nav-link active" href="tel:84952151036">8 (495) 215-10-36</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">С 9:00 до 18:00 по будням</a>
+                                <span class="nav-link">С 9:00 до 18:00 по будням</span>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Email: ilove@otkorobki.ru</a>
+                                <span class="nav-link">Email: <a href="mailto:ilove@otkorobki.ru">ilove@otkorobki.ru</a></span>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="modal" data-target="#exampleModal" href="#">Обратная связь</a>
@@ -255,8 +284,26 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12">
-                            Договор-Оферта Пользовательское соглашение Политика конфиденциальности
+                    <div class="col-8">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Договор-Оферта</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Пользовательское соглашение</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Политика конфиденциальности</a>
+                            </li>
+                        </ul>                        
+                         
+                    </div>
+
+                    <div class="col-4">
+                        <div class="social-block">
+                            <a href="https://web.facebook.com/otkorobki.ru/" target="_blank" class="nav-link fab fa-facebook"></a>
+                            <a href="https://vk.com/club55825384" target="_blank" class="nav-link fab fa-vk"></a>						
+                        </div>
                     </div>
                 </div>
             </div>
@@ -266,15 +313,6 @@
     <!--end c-offcanvas-content-wrap-->
 
     <aside id="offCanvas">
-        <nav class="nav flex-column">
-            <a class="nav-link active" href="#">Active</a>
-            <a class="nav-link" href="#">Link</a>
-            <a class="nav-link" href="#">Link</a>
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </nav>
-    </aside>
-
-    <aside id="offCanvasRight">
         <nav class="nav flex-column">
             <a class="nav-link active" href="#">Active</a>
             <a class="nav-link" href="#">Link</a>
