@@ -19,16 +19,16 @@
 
         <header id="header">
 
-            <a href="#offCanvas" id="triggerButton" class="btn btn-primary my-2 d-lg-none">Menu</a>
-
             <div class="top-menu-line">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-1">
-                            <div class="nav-link">Москва</div>
+                    <div class="row align-items-center">
+                        <div class="col-4 col-lg-1">
+                            <div class="region-change">
+                                <span><i class="fas fa-map-marker-alt"></i> <a href="#">Москва</a></span>
+                            </div>
                         </div>
-                        <div class="col-11">
-                            <ul class="nav" id="top-menu">
+                        <div class="col-9 col-lg-9 d-none d-lg-block">
+                            <ul class="nav justify-content-center" id="top-menu">
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">О компании</a>
                                 </li>
@@ -44,32 +44,34 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">Вход | Регистрация</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">8 (495) 215-10-36</a>
-                                </li>
                             </ul>
-
                         </div>
+                        <div class="col-4 col-lg-2 text-right">
+                            <a class="phone-top" href="tel:84952151036">8 (495) 215-10-36</a>
+                        </div>                        
+                        <div class="col-4 d-lg-none text-right">
+                            <a href="#offCanvas" id="triggerButton" class="btn btn-primary my-2"><i class="fas fa-bars"></i></a>
+                        </div>                        
                     </div>
                 </div>
             </div>
 
             <div class="container">
                 <div class="row align-items-center my-4">
-                    <div class="col-4">
+                    <div class="col-12 col-sm-6 col-lg-3 order-1 order-lg-1">
                         <a href="/" class="d-block">
-                            <img class="img-fluid" src="https://via.placeholder.com/260x46" alt="">
+                            <img class="img-fluid" src="https://via.placeholder.com/600x100" alt="">
                         </a>
                     </div>
-                    <div class="col-4">
+                    <div class="d-none d-md-block col-md-12 col-lg-6 order-3 order-lg-2">
                         <form action="">
-                            <input type="text" class="form-control" id="search" placeholder="Поиск" aria-label="Search">
+                            <input type="text" class="form-control mt-4 mt-lg-0" id="search" placeholder="Поиск" aria-label="Search">
                         </form>
                     </div>
-                    <div class="col-4">
-                        <button class="btn btn-primary"><i class="fas fa-user"></i></button>
-                        <button class="btn btn-primary"><i class="fas fa-heart"></i></button>
-                        <button class="btn btn-primary">Корзина</button>
+                    <div class="col-12 col-sm-6 col-lg-3 order-2 order-lg-3 text-center text-sm-right">
+                        <a href="#" class="btn btn-primary"><i class="fas fa-user"></i></a>
+                        <a href="#" class="btn btn-primary"><i class="fas fa-heart"></i></a>
+                        <button class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Корзина</button>
                     </div>
                 </div>
             </div>
@@ -78,29 +80,51 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
+                            <div class="row justify-content-between">
+                                <div class="col-auto">
 
-                            <ul class="nav" id="main-menu">
-                                <li class="nav-item">
                                     <a class="btn btn-secondary nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
-                                        aria-haspopup="true" aria-expanded="false">Каталог товаров</a>
+                                        aria-haspopup="true" aria-expanded="false"><i class="fas fa-bars"></i> Каталог товаров</a>
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                        <a class="dropdown-item" href="#">Action</a>
-                                        <a class="dropdown-item" href="#">Another action</a>
-                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <a class="dropdown-item" href="#">Кондитерские изделия</a>
+                                        <a class="dropdown-item" href="#">Бакалея</a>
+                                        <a class="dropdown-item" href="#">Чай, кофе, какао</a>
+                                        <a class="dropdown-item" href="#">Вода, напитки, соки</a>
+                                        <a class="dropdown-item" href="#">Консервация</a>
+                                        <a class="dropdown-item" href="#">Товары для животных</a>
+                                        <a class="dropdown-item" href="#">Молочные продукты, сыры, яйцо</a>
+                                        <a class="dropdown-item" href="#">Мясо, птица, рыба, гастрономия</a>
+                                        <a class="dropdown-item" href="#">Замороженные продукты</a>
+                                        <a class="dropdown-item" href="#">Детское питание и товары для детей</a>
+                                        <a class="dropdown-item" href="#">Овощи, фрукты, зелень</a>
+                                        <a class="dropdown-item" href="#">Бытовая химия, товары для дома, красоты и здоровья</a>
                                     </div>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Лучшие предложения</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Новинки</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Распродажа</a>
-                                </li>
-                            </ul>
 
+                                </div>
+                                <div class="col-auto d-none d-md-block">
+                                    <ul class="nav" id="main-menu">                            
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Лучшие предложения</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Новинки</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Распродажа</a>
+                                        </li>
+            
+                                    </ul>                            
+                                </div>
+
+                                <div class="col-auto d-md-none text-right">
+                                    <a href="#" class="btn btn-primary"><i class="fas fa-user"></i></a>
+                                    <a href="#" class="btn btn-primary"><i class="fas fa-heart"></i></a>
+                                    <button class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Корзина</button>
+                                </div>                                
+                                
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -115,19 +139,16 @@
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item">
-                                    <a href="#">Home</a>
+                                    <a href="#">Главная</a>
                                 </li>
-                                <li class="breadcrumb-item">
-                                    <a href="#">Library</a>
-                                </li>
-                                <li class="breadcrumb-item active" aria-current="page">Data</li>
+                                <li class="breadcrumb-item active" aria-current="page">Консервация</li>
                             </ol>
                         </nav>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12 mb-4">
                         <a href="#" class="d-block text-center" id="banner-1">
                             <img class="img-fluid" src="https://via.placeholder.com/1080x140" alt="">
                         </a>
@@ -139,20 +160,49 @@
                         <aside id="sidebar">
                             <h3>Подкатегории</h3>
 
-                            <h3>Производители</h3>
-                            <div class="check-group" id="manufacturers">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                        Default checkbox
-                                    </label>
+                            <a data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                <h3>Производители</h3>
+                            </a>
+
+                            <div class="collapse show py-4" id="collapseExample">                                  
+                                
+                                <input type="text" class="form-control" placeholder="Поиск по производителям">
+
+                                <div class="check-group" id="manufacturers">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            КАРАТ Московский завод плавленых сыров
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                        <label class="form-check-label" for="defaultCheck2">
+                                            Хохланд Руссланд
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                                        <label class="form-check-label" for="defaultCheck3">
+                                            Останкинский молочный комбинат
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+                                        <label class="form-check-label" for="defaultCheck4">
+                                            СПК "Сельскохозяйственная артель (колхоз) "Москва"
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+                                        <label class="form-check-label" for="defaultCheck5">
+                                            Эрманн
+                                        </label>
+                                    </div>
                                 </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
-                                    <label class="form-check-label" for="defaultCheck2">
-                                        Disabled checkbox
-                                    </label>
-                                </div>
+
+                                <button class="btn btn-primary">Показать все варианты +</button>
+
                             </div>
 
                             <h3>Поставщики</h3>
@@ -182,42 +232,52 @@
 
                         <div class="row mb-4">
                             <div class="col-12 col-sm-6 col-md-4">
-                                <div class="card">
+                                <div class="card product-card">
                                     <img src="https://via.placeholder.com/180x180" class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">Икра "ЕКО" из кабачков, 12 шт по 0,48 кг</h5>
                                         <div class="card-text">
-                                            <p>Производитель: <a href="#">Группа компаний "Лакония"</a></p>
-                                            <p>Упаковка: 12 шт. x0,48 кг ( 5,76 кг )</p>
+                                            <div>Производитель: <a href="#">Группа компаний "Лакония"</a></div>
+                                            <div>Упаковка: 12 шт. x0,48 кг ( 5,76 кг )</div>
                                         </div>
                                         <div class="card-price">
-                                            <p>480,00 <i class="fas fa-ruble-sign"></i> / 12 шт.</p>
+                                            480,00 <i class="fas fa-ruble-sign"></i><span> / 12 шт.</span>
                                         </div>
                                         <a href="#" class="btn btn-primary">В корзину</a>
                                     </div>
                                 </div>
                             </div>
+
                             <div class="col-12 col-sm-6 col-md-4">
-                                <div class="card">
-                                    <img src="https://via.placeholder.com/575x275" class="card-img-top" alt="...">
+                                <div class="card product-card">
+                                    <img src="https://via.placeholder.com/180x180" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                                            content.
-                                        </p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        <h5 class="card-title">Икра "ЕКО" из кабачков, 12 шт по 0,48 кг</h5>
+                                        <div class="card-text">
+                                            <div>Производитель: <a href="#">Группа компаний "Лакония"</a></div>
+                                            <div>Упаковка: 12 шт. x0,48 кг ( 5,76 кг )</div>
+                                        </div>
+                                        <div class="card-price">
+                                            480,00 <i class="fas fa-ruble-sign"></i><span> / 12 шт.</span>
+                                        </div>
+                                        <a href="#" class="btn btn-primary">В корзину</a>
                                     </div>
                                 </div>
                             </div>
+
                             <div class="col-12 col-sm-6 col-md-4">
-                                <div class="card">
-                                    <img src="https://via.placeholder.com/575x275" class="card-img-top" alt="...">
+                                <div class="card product-card">
+                                    <img src="https://via.placeholder.com/180x180" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                                            content.
-                                        </p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        <h5 class="card-title">Икра "ЕКО" из кабачков, 12 шт по 0,48 кг</h5>
+                                        <div class="card-text">
+                                            <div>Производитель: <a href="#">Группа компаний "Лакония"</a></div>
+                                            <div>Упаковка: 12 шт. x0,48 кг ( 5,76 кг )</div>
+                                        </div>
+                                        <div class="card-price">
+                                            480,00 <i class="fas fa-ruble-sign"></i><span> / 12 шт.</span>
+                                        </div>
+                                        <a href="#" class="btn btn-primary">В корзину</a>
                                     </div>
                                 </div>
                             </div>
@@ -234,6 +294,11 @@
         <footer id="footer">
             <div class="container">
                 <div class="row">
+                    <div class="col-12 py-4">
+                        <a href="/" class="d-block">
+                            <img class="img-fluid" src="https://via.placeholder.com/260x46" alt="">
+                        </a>
+                    </div>
                     <div class="col-12 col-md-6 col-lg-4">
                         <ul class="nav flex-column">
                             <li class="nav-item">
@@ -285,7 +350,7 @@
                 </div>
                 <div class="row">
                     <div class="col-8">
-                        <ul class="nav">
+                        <ul class="nav" id="bottom-menu">
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Договор-Оферта</a>
                             </li>
@@ -313,12 +378,26 @@
     <!--end c-offcanvas-content-wrap-->
 
     <aside id="offCanvas">
-        <nav class="nav flex-column">
-            <a class="nav-link active" href="#">Active</a>
-            <a class="nav-link" href="#">Link</a>
-            <a class="nav-link" href="#">Link</a>
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </nav>
+
+        <ul class="nav flex-column" id="offcanvas-menu">
+            <li class="nav-item">
+                <a class="nav-link" href="#">О компании</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Доставка и оплата</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Как сделать заказ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Поставщикам и производителям</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Вход | Регистрация</a>
+            </li>
+        </ul>
+
+
     </aside>
 
     <!-- Modal -->

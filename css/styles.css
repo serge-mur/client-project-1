@@ -17,14 +17,78 @@ body {
 .top-menu-line {
     background-color: #f8f8f8;
 }
+#top-menu {
+    font-size: 0.875rem;
+}
+#top-menu .nav-link {
+    padding: .5rem .5rem;
+}
+.region-change span {
+    display: block;
+    font-size: 0.875rem;
+    padding: .5rem 0;
+    white-space: nowrap;
+}
+.phone-top {
+    display: block;    
+    font-size: 0.875rem;
+    padding: .5rem 0;
+    white-space: nowrap;    
+    text-align: right;  
+}
 .main-menu-line {
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
 }
 
+/* main */
+.breadcrumb {
+    background-color: transparent;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    color: #b3b3b3;
+    content: ">";
+}
+
+/* product card */
+.product-card .card-img-top {
+    padding: 1rem 1rem 0 1rem;
+}
+.product-card .card-title {
+    font-size: 1rem;
+    font-weight: bold;
+}
+.product-card .card-text {
+    font-size: 0.875rem;
+    color: #666666;
+}
+.product-card .card-price {
+    font-size: 1.875rem;
+    color: #90de23;
+}
+.product-card .card-price span {
+    font-size: 0.75rem;
+}
+
+
+
+/* offcanvas */
 #offCanvas, #offCanvasRight {
     background-color: #fff;
     z-index: 1080;
+}
+#offcanvas-menu {
+    font-size: 0.875rem;
+}
+
+#footer {
+    background-color: #f7f8fa;
+}
+#footer .nav-link {
+    font-size: 1rem;
+}
+#bottom-menu .nav-link {
+    font-size: 0.875rem;
 }
 
 /*
