@@ -41,6 +41,17 @@ body {
     border-bottom: 1px solid #ccc;
 }
 
+/* sidebar */
+#sidebar a>.filter-title:after {
+    font-family: 'Font Awesome\ 5 Free';
+    content: "\f107";
+    font-weight: 900; 
+    margin-left: .5rem;   
+}
+#sidebar a.collapsed>.filter-title:after {
+    content: "\f106";
+}
+
 /* main */
 .breadcrumb {
     background-color: transparent;
@@ -81,6 +92,7 @@ body {
     font-size: 0.875rem;
 }
 
+/* footer */
 #footer {
     background-color: #f7f8fa;
 }

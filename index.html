@@ -93,6 +93,20 @@
                                     <a class="btn btn-secondary nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
                                         aria-haspopup="true" aria-expanded="false"><i class="fas fa-bars"></i> Каталог товаров</a>
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+
+                                        <div class="d-md-none">
+                                            <form action="">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" id="search" placeholder="Поиск" aria-label="Search">
+                                                    <div class="input-group-append">
+                                                        <button class="btn btn-secondary" type="button">
+                                                            <i class="fa fa-search"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+
                                         <a class="dropdown-item" href="#">Кондитерские изделия</a>
                                         <a class="dropdown-item" href="#">Бакалея</a>
                                         <a class="dropdown-item" href="#">Чай, кофе, какао</a>
@@ -168,7 +182,7 @@
                             <h3>Подкатегории</h3>
 
                             <a data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                                <h3>Производители</h3>
+                                <h3 class="filter-title">Производители</h3>
                             </a>
 
                             <div class="collapse show py-4" id="collapseExample">                                  
@@ -230,7 +244,28 @@
                                 </div>
                                 <div class="col-6 text-right">
                                     <div class="sorting-block-right">
-                                        <span>товаров на странице</span>
+
+                                        <div class="form-row justify-content-end align-items-center">
+                                            <div class="col-auto">
+                                                <i class="fas fa-grip-lines"></i>
+                                            </div>                                                
+                                            <div class="col-auto">
+                                                <i class="fas fa-grip-horizontal"></i>
+                                            </div>                                                
+                                            <div class="col-auto">
+                                                <select id="inputState" class="form-control">
+                                                    <option selected>10</option>
+                                                    <option>20</option>
+                                                    <option>40</option>
+                                                    <option>60</option>
+                                                    <option>все</option>
+                                                </select>                                                          
+                                            </div>
+                                            <div class="col-auto">
+                                                <span>товаров на странице</span>
+                                            </div>                                                
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
