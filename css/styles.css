@@ -44,6 +44,17 @@ body {
     box-shadow: -1px 12px 45px -26px rgba(0, 0, 0, 0.75);
 }
 
+/*sticky header position*/
+.sticky.is-sticky {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background-color: #fff;
+}
+
 /* sidebar */
 #sidebar a>.filter-title:after {
     font-family: 'Font Awesome\ 5 Free';
