@@ -3,6 +3,7 @@
     --green: #90de23;
     --light-green: #f1fae8;
     --blue: #0074ff;
+    --light-blue: #f3f9ff;
     --yellow: #ffe500; 
     --light-gray: #f8f8f8;     
     --gray: #b3b3b3;
@@ -12,16 +13,21 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+/* bootstrap overwrite */
+.form-control {
+    border: 1px solid #ebebeb;
+    border-radius: 10px;
+}
+
 
 /* header */
 .top-menu-line {
     background-color: #f8f8f8;
 }
-#top-menu {
-    font-size: 0.875rem;
-}
 #top-menu .nav-link {
     padding: .5rem .5rem;
+    font-size: 0.875rem; 
+    color: #666666;   
 }
 .region-change span {
     display: block;
@@ -31,6 +37,8 @@ body {
 }
 .phone-top {
     display: block;    
+    color: #000;
+    font-weight: bold;
     font-size: 0.875rem;
     padding: .5rem 0;
     white-space: nowrap;    
@@ -43,6 +51,42 @@ body {
     -moz-box-shadow: -1px 12px 45px -26px rgba(0, 0, 0, 0.75);
     box-shadow: -1px 12px 45px -26px rgba(0, 0, 0, 0.75);
 }
+.btn-catalog {
+    background-color: #f3f9ff;
+    font-weight: bold;
+    color: #0074ff;
+    border-radius: 40px;    
+}
+.btn-cart {
+    border-radius: 30px;
+    background-color: #f1fae8;
+    color: #90de23;
+    font-size: 1rem;
+}
+.btn-user {
+    background-color: #f3f9ff;
+    color: #0074ff;
+    border-radius: 50%;
+}
+.btn-favorite {
+    color: #b3b3b3;
+}
+.btn-favorite:hover {
+    color: red;
+}
+#search,
+#search-mobile {
+    border-right: 1px solid transparent;
+}
+.btn-search {
+    border-radius: 10px;
+    border: 1px solid #ebebeb;
+    border-left: 1px solid transparent;
+    color: #ebebeb;
+}
+.btn-search-collapse {
+    color: #666666;
+}
 
 /*sticky header position*/
 .sticky.is-sticky {
@@ -54,15 +98,30 @@ body {
     width: 100%;
     background-color: #fff;
 }
+/* offcanvas */
+#offCanvas, #offCanvasRight {
+    background-color: #fff;
+    z-index: 1080;
+}
+#offcanvas-menu {
+    font-size: 0.875rem;
+}
 
 /* sidebar */
-#sidebar a>.filter-title:after {
+#sidebar a[data-toggle="collapse"]>.filter-title {
+    font-size: 1.375rem;
+    color: #000;
+}
+#sidebar a[data-toggle="collapse"]:hover {
+    text-decoration: none;    
+}
+#sidebar a[data-toggle="collapse"]>.filter-title:after {
     font-family: 'Font Awesome\ 5 Free';
     content: "\f107";
     font-weight: 900; 
     margin-left: .5rem;   
 }
-#sidebar a.collapsed>.filter-title:after {
+#sidebar a[data-toggle="collapse"].collapsed>.filter-title:after {
     content: "\f106";
 }
 
@@ -119,15 +178,6 @@ body {
     color: #666;
 }
 
-
-/* offcanvas */
-#offCanvas, #offCanvasRight {
-    background-color: #fff;
-    z-index: 1080;
-}
-#offcanvas-menu {
-    font-size: 0.875rem;
-}
 
 /* footer */
 #footer {
