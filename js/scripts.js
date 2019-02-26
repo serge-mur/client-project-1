@@ -5,6 +5,25 @@ $(document).ready(function () {
         triggerButton: '#triggerButton'
     });
 
+    // sliders
+    $('.brands-slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 6,
+        slidesToScroll: 6,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                }
+            }
+        ]
+    });
+
+
     if (window.matchMedia("screen and (min-width: 1px) and (max-width:991px)").matches) {
         // console.log('mobile');
         if($('#sidebar .collapse').hasClass('show')) {

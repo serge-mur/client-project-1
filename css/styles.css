@@ -128,6 +128,26 @@ body {
     font-size: 0.875rem;
 }
 
+/* main page styles */
+.catalog-links a {
+    display: flex;
+    position: relative;
+    background-color: #f8f8f8;
+    justify-content: right;
+    align-items: center;
+    min-height: 110px;
+}
+.catalog-links a>img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.catalog-links a>span {
+
+    /* height: 100%; */
+}
+
+
 /* sidebar */
 #sidebar a[data-toggle="collapse"]>.filter-title {
     font-size: 1.375rem;
