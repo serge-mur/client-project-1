@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="js/include.js"></script>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/js-offcanvas/js-offcanvas.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Main page</title>
+</head>
+
+<body>
+    <div class="c-offcanvas-content-wrap">
+
+        <!-- include header -->
+        <div w3-include-html="include/header.html"></div>
+        <!-- end include header -->
+
+        <main id="main" class="my-2">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1>test main page</h1>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+
+        <!-- include footer -->
+        <div w3-include-html="include/footer.html"></div>
+        <!-- end include footer -->
+
+    </div>
+    <!--end c-offcanvas-content-wrap-->
+
+    <aside id="offCanvas">
+
+        <ul class="nav flex-column" id="offcanvas-menu">
+            <li class="nav-item">
+                <a class="nav-link" href="#">О компании</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Доставка и оплата</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Как сделать заказ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Поставщикам и производителям</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Вход | Регистрация</a>
+            </li>
+        </ul>
+
+
+    </aside>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Форма обратной связи</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        includeHTML();
+    </script>
+
+    <script src="libs/jquery-3.3.1.min.js"></script>
+    <script src="libs/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="libs/js-offcanvas/js-offcanvas.pkgd.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>

@@ -12,13 +12,15 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #666666;
 }
+
 /* bootstrap overwrite */
 .form-control {
     border: 1px solid #ebebeb;
     border-radius: 10px;
 }
-
 
 /* header */
 .top-menu-line {
@@ -63,7 +65,8 @@ body {
     color: #0074ff;
     border-radius: 40px;    
 }
-.btn-catalog:hover {
+.btn-catalog:hover,
+.btn-catalog:focus {
     background-color: #0074ff;
     color: #fff;  
 }
@@ -73,10 +76,18 @@ body {
     color: #90de23;
     font-size: 1rem;
 }
+.btn-cart:hover {
+    background-color: #90de23;
+    color: #fff;
+}
 .btn-user {
     background-color: #f3f9ff;
     color: #0074ff;
     border-radius: 50%;
+}
+.btn-user:hover {
+    background-color: #0074ff;
+    color: #fff;
 }
 .btn-favorite {
     color: #b3b3b3;
@@ -156,8 +167,10 @@ body {
     background-color: transparent;
 }
 .breadcrumb-item+.breadcrumb-item::before {
+    font-family: 'Font Awesome\ 5 Free';
     color: #b3b3b3;
-    content: ">";
+    content: "\f061";
+    font-weight: 900; 
 }
 
 .catalog-title {
@@ -205,14 +218,10 @@ body {
     border-radius: 50px;
     width: 100%;
 }
-
-
 .text-block {
     font-size: 0.875rem;
     color: #666;
 }
-
-
 
 /* footer */
 #footer {
