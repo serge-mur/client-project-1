@@ -185,74 +185,6 @@ h3 {
     color: #666666;
 }
 
-/* main page styles */
-#catalog-links a {
-    display: flex;
-    position: relative;
-    background-color: #f8f8f8;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 0 1rem 0 110px;
-    min-height: 100px;
-    border-radius: 10px;
-}
-#catalog-links a:hover {
-    text-decoration: none;
-}
-#catalog-links a>img {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-}
-#catalog-links a>span {
-    text-align: right;
-    color: #666666;
-}
-
-#advantage i {
-    display: block;
-    color: #b3b3b3;
-    font-size: 2.75rem;
-    text-align: center;
-    padding-bottom: 2rem;
-}
-#advantage p {
-    font-size: 0.875rem;
-    color: #b3b3b3;
-    text-align: center;
-}
-
-#big-banner {
-    background: url(../img/main/first_banner.png) no-repeat center center;
-    background-size: cover;
-}
-#big-banner .banner-title {
-    font-size: 2.75rem;
-    line-height: 3.75rem;
-    color: #000;
-    font-weight: bold;
-}
-.btn-green {
-    background-color: #90de23;
-    color: #fff;
-    border-radius: 30px;
-    font-size: 1rem;
-    font-weight: bold;
-}
-.btn-green:hover {
-    color: #fff;
-}
-#description {
-    background: url(../img/main/second_form.png) no-repeat center center;
-    background-size: cover;
-}
-#description .description-title {
-    font-size: 2.75rem;
-    line-height: 3.75rem;
-    color: #000;
-    font-weight: bold;
-}
-
 /* sidebar */
 
 #sidebar-menu .nav-link {
@@ -440,3 +372,82 @@ Custom media queries
 }
 
 /* other css */
+
+/* 
+================
+Main page styles
+================
+*/
+#catalog-links a {
+    display: flex;
+    position: relative;
+    background-color: #f8f8f8;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 1rem 0 110px;
+    min-height: 100px;
+    border-radius: 10px;
+}
+#catalog-links a:hover {
+    text-decoration: none;
+}
+#catalog-links a>img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+#catalog-links a>span {
+    text-align: right;
+    color: #666666;
+}
+
+#advantage i {
+    display: block;
+    color: #b3b3b3;
+    font-size: 2.75rem;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+#advantage p {
+    font-size: 0.875rem;
+    color: #b3b3b3;
+    text-align: center;
+}
+
+#big-banner {
+    background: url(../img/main/first_banner.png) no-repeat center center;
+    background-size: cover;
+}
+#big-banner .banner-title {
+    font-size: 2.75rem;
+    line-height: 3.75rem;
+    color: #000;
+    font-weight: bold;
+}
+.btn-green {
+    background-color: #90de23;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.btn-green:hover {
+    color: #fff;
+}
+#description {
+    background: url(../img/main/second_form.png) no-repeat center center;
+    background-size: cover;
+}
+#description .description-title {
+    font-size: 2.75rem;
+    line-height: 3.75rem;
+    color: #000;
+    font-weight: bold;
+}
+
+/* 
+================
+Welcome page css
+================
+*/
+
