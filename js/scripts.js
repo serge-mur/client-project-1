@@ -40,16 +40,33 @@ $(document).ready(function () {
         ]
     });
 
+    $('.slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        infinite: false,
+        dots: true,        
+        asNavFor: '.slider-nav'
+    });
+    $('.slider-nav').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        infinite: false,
+        asNavFor: '.slider-for',
+        // centerMode: true,
+        focusOnSelect: true
+    });
+
 
     if (window.matchMedia("screen and (min-width: 1px) and (max-width:991px)").matches) {
         // console.log('mobile');
-        if($('#sidebar .collapse').hasClass('show')) {
+        if ($('#sidebar .collapse').hasClass('show')) {
             $('#sidebar .collapse').removeClass('show');
         }
     }
 
-// Sticky navbar
-// =========================
+    // Sticky navbar
+    // =========================
 
     // Custom function which toggles between sticky class (is-sticky)
     var stickyToggle = function (sticky, stickyWrapper, scrollElement) {
