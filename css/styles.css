@@ -450,4 +450,25 @@ Main page styles
 Welcome page css
 ================
 */
+.slider-nav div {
+    margin: 0 .5rem;
+}
+#profit img {
+    display: block;
+    margin: 0 auto;
+}
+#profit p {
+    text-align: center;
+    font-size: 0.875rem;
+    margin-top: 1rem;
+}
+#partners img {
+    display: block;
+    margin: 0 auto;  
+    margin-bottom: 1rem;  
+}
+#video p {
+    font-size: 0.875rem;
+}
+
 

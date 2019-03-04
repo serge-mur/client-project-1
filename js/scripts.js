@@ -54,7 +54,16 @@ $(document).ready(function () {
         infinite: false,
         asNavFor: '.slider-for',
         // centerMode: true,
-        focusOnSelect: true
+        focusOnSelect: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                }
+            }
+        ]        
     });
 
 
