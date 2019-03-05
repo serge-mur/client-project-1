@@ -191,7 +191,7 @@ h3 {
     font-size: 0.875rem;
     font-weight: bold;
     color: #666666;  
-    padding: .2rem 1rem;  
+    padding: .2rem 0;  
 }
 #sidebar-menu .nav-link:hover {
     color: #000;
@@ -243,6 +243,17 @@ h3 {
 .breadcrumb {
     background-color: transparent;
 }
+.breadcrumb-item a {
+    font-size: 0.875rem;
+    color: #4e4e4e;
+    text-decoration: underline;
+}
+.breadcrumb-item a:hover {
+    text-decoration: none;
+}
+.breadcrumb-item.active {
+    color: #bdbdbd;
+}
 .breadcrumb-item+.breadcrumb-item::before {
     font-family: 'Font Awesome\ 5 Free';
     color: #b3b3b3;
@@ -263,6 +274,19 @@ h3 {
 /* sorting block */
 .sorting-block {
     font-size: 0.875rem;
+    color: #909090;
+}
+.sorting-block a {
+    color: #007cb9;
+    border-bottom: 1px dashed #007cb9;
+}
+.sorting-block i:before {
+    font-size: 1.85rem;
+    vertical-align: middle;
+}
+.sorting-block a:hover {
+    text-decoration: none;
+    border-bottom: none;
 }
 
 /* product card */
@@ -294,6 +318,9 @@ h3 {
     font-size: 0.875rem;
     color: #666666;
 }
+.product-card .card-text a {
+    color: #000;
+}
 .product-card .card-price {
     font-size: 1.875rem;
     color: #90de23;
@@ -307,6 +334,12 @@ h3 {
     color: #fff;
     border-radius: 50px;
     width: 100%;
+    border: 2px solid #90de23;
+}
+.product-card .btn-buy:hover {
+    color: #90de23;
+    background-color: #f1fae8;
+    border: 2px solid #90de23;
 }
 .text-block {
     font-size: 0.875rem;
