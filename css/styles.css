@@ -480,6 +480,21 @@ Main page styles
 
 /* 
 ================
+Product page css
+================
+*/
+.provider-line {
+    background-color: #fafafa;
+}
+.border {
+    border: 2px solid #f2f2f2;
+    border-radius: 10px;
+}
+
+
+
+/* 
+================
 Welcome page css
 ================
 */
