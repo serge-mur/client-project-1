@@ -540,4 +540,73 @@ Welcome page css
     font-size: 0.875rem;
 }
 
+/* 
+================
+Provisioner list page css
+================
+*/
+.list-view > * {
+    padding: 0 1rem;
+}
+.list-view a {
+    color: #0075ff;   
+}
+.list-view span {
+    color: #696969;
+}
 
+.liters-en a,
+.liters-ru a,
+.liters-en span,
+.liters-ru span {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 1rem; 
+}
+.liters-en a,
+.liters-ru a {
+    color: #0075ff;
+}
+.liters-en span,
+.liters-ru span {
+    color: #b8b8b8;
+  
+}
+.category-list {
+    padding: 0;
+    list-style: none;
+    column-count: 4;
+}
+.category-list li {
+    margin-bottom: .75rem;      
+}
+.category-list a {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #0075ff;
+    text-decoration: underline;
+}
+.category-list a:hover {
+    text-decoration: none;
+}
+
+.provisioner-list {
+    padding: 0;
+    list-style: none;
+    column-count: 3;
+}
+.provisioner-list li {
+    margin-bottom: .75rem;     
+}
+.provisioner-list a {
+    font-size: 1rem;
+    font-weight: bold;
+    border-bottom: 1px solid #dfdfdf;
+    color: #323232;   
+
+}
+.provisioner-list a:hover {
+    text-decoration: none;
+}

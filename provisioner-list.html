@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="js/include.js"></script>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/js-offcanvas/js-offcanvas.css">
+    <link rel="stylesheet" href="libs/slick/slick.css">
+    <link rel="stylesheet" href="libs/slick/slick-theme.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Provisioner list page</title>
+</head>
+
+<body>
+    <div class="c-offcanvas-content-wrap">
+
+        <!-- include header -->
+        <div w3-include-html="include/header.html"></div>
+        <!-- end include header -->
+
+        <main id="main" class="my-2">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <a href="#">Главная</a>
+                                </li>
+                                <li class="breadcrumb-item active" aria-current="page">Поставщики</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-12">
+
+                        <div class="row mb-4">
+                            <div class="col-12 col-lg-9">
+                                <h1 class="d-inline-block catalog-title">Все поставщики</h1>
+                                <span><span>56</span> поставщиков</span>                                
+                            </div>
+                            <div class="col-12 col-lg-3 text-left text-lg-right list-view">
+                                <span>По категориям</span><a href="#">По алфавиту</a>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <form action="">
+                                    <div class="input-group mt-4 mt-lg-0">
+                                        <input type="text" class="form-control" id="search" placeholder="Начните вводить название производителя"
+                                            aria-label="Search">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-search" type="button">
+                                                <i class="fa fa-search"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            
+                            <div class="col-12">
+                                <div class="liters-en my-4">
+                                    <a href="#">A</a>
+                                    <span>B</span>
+                                    <a href="#">C</a>
+                                    <a href="#">D</a>
+                                    <span>E</span>
+                                    <a href="#">F</a>
+                                    <span>G</span>
+                                    <span>H</span>
+                                    <span>I</span>
+                                    <span>J</span>
+                                    <span>K</span>
+                                    <span>L</span>
+                                    <span>M</span>
+                                    <span>N</span>
+                                    <span>O</span>
+                                    <span>P</span>
+                                    <span>Q</span>
+                                    <span>R</span>
+                                    <span>S</span>
+                                    <span>T</span>
+                                    <span>U</span>
+                                    <span>V</span>
+                                    <span>W</span>
+                                    <span>X</span>
+                                    <span>Y</span>
+                                    <span>Z</span>
+                                </div>
+                                <div class="liters-ru mb-4">
+                                    <a href="#">А</a>
+                                    <span>Б</span>
+                                    <a href="#">В</a>
+                                    <a href="#">Г</a>
+                                    <span>Д</span>
+                                    <a href="#">Е</a>
+                                    <span>Ж</span>
+                                    <span>З</span>
+                                    <span>И</span>
+                                    <span>Й</span>
+                                    <span>К</span>
+                                    <span>Л</span>
+                                    <span>М</span>
+                                    <span>Н</span>
+                                    <span>О</span>
+                                    <span>П</span>
+                                    <span>Р</span>
+                                    <span>С</span>
+                                    <span>Т</span>
+                                    <span>У</span>
+                                    <span>Ф</span>
+                                    <span>Х</span>
+                                    <span>Ц</span>
+                                    <span>Ч</span>
+                                    <span>Ш</span>
+                                    <span>Щ</span>
+                                    <span>Ы</span>
+                                    <span>Э</span>
+                                    <span>Ю</span>
+                                    <span>Я</span>                      
+                                </div>
+                            </div>
+
+                            <div class="col-12 mb-5">
+                                <ul class="category-list">
+                                    <li><a href="#">Кондитерские изделия</a></li>
+                                    <li><a href="#">Вода, напитки, соки</a></li>
+                                    <li><a href="#">Детское питание и товары для детей</a></li>
+                                    <li><a href="#">Бакалея</a></li>
+                                    <li><a href="#">Чай, кофе, какао</a></li>
+                                    <li><a href="#">Красота, здоровье, гигиена, бытовая химия</a></li>
+                                    <li><a href="#">Консервация</a></li>
+                                    <li><a href="#">Мясо, птица, рыба, гастрономия</a></li>
+                                    <li><a href="#">Товары для животных</a></li>
+                                    <li><a href="#">Молочные продукты, сыры, яйцо</a></li>
+                                    <li><a href="#">Замороженные продукты</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-12 mb-5">
+                                <ul class="provisioner-list">
+                                    <li><a href="#">ООО "ГЛАВТОРГ"</a></li>
+                                    <li><a href="#">МегаБэстФуд</a></li>
+                                    <li><a href="#">ООО "Калина"</a></li>
+                                    <li><a href="#">Группа компаний Арикон</a></li>
+                                    <li><a href="#">Белёвские сладости</a></li>
+                                    <li><a href="#">ООО «ТИПОРТ»</a></li>
+                                    <li><a href="#"> ООО "ЕВРО-ОПТ"</a></li>
+                                    <li><a href="#">ООО Дело вкуса</a></li>
+                                    <li><a href="#">"НОЯН" ООО</a></li>
+                                    <li><a href="#">ЗАО "Егорьевский Хлебокомбинат"</a></li>
+                                    <li><a href="#">"АДЕОН"</a></li>
+                                    <li><a href="#">ООО Мясокомбинат Очаково</a></li>
+                                    <li><a href="#">ООО "Большой Ветер"</a></li>
+                                    <li><a href="#">ООО "Атлант"</a></li>
+                                    <li><a href="#">ООО ТПК Вилон</a></li>
+                                    <li><a href="#">ООО "Баринофф"</a></li>
+                                    <li><a href="#">Группа компаний Лакония (Москва)</a></li>
+                                    <li><a href="#">ООО ТРИНИТИ</a></li>
+                                    <li><a href="#">ООО "Лакомства для здоровья"</a></li>
+                                    <li><a href="#">"Fleur Alpine UAB"</a></li>
+                                    <li><a href="#">ООО Знаменский СГЦ</a></li>
+                                    <li><a href="#">Сладкая мечта</a></li>
+                                    <li><a href="#">ООО "ВИТАПРОМ"</a></li>
+                                    <li><a href="#">ООО "СОЛИС"</a></li>
+                                    <li><a href="#">"Мясоперерабатывающий холдинг Арго"</a></li>
+                                    <li><a href="#">Vikonika</a></li>
+                                    <li><a href="#">ООО "Абсолют" Москва</a></li>
+                                    <li><a href="#">ООО "МАЛВИКЪ"</a></li>
+                                    <li><a href="#">ООО Тульский хлебокомбинат</a></li>
+                                    <li><a href="#">Орехомания</a></li>
+                                    <li><a href="#">ООО Белевская Пастила</a></li>
+                                    <li><a href="#">ООО "Империал Аква"</a></li>
+                                    <li><a href="#">ГК Тарпан</a></li>
+                                    <li><a href="#">ООО ФАБРИКАНТЫ</a></li>
+                                    <li><a href="#">"Московская ореховая компания"</a></li>
+                                    <li><a href="#">Московский филиал ООО "Советский Мясокомбинат"</a></li>
+                                    <li><a href="#">ООО Азбука шоколада</a></li>
+                                    <li><a href="#">ОOО "ЛАЙЛА"</a></li>
+                                    <li><a href="#">ГК "Континент" Дмитров</a></li>
+                                    <li><a href="#">ГК "Континент" Домодедово</a></li>
+                                    <li><a href="#">ГК "Континент" Москва</a></li>
+                                    <li><a href="#">ГК "Континент" Одинцово</a></li>
+                                    <li><a href="#">ООО "Маренго Рус" Москва</a></li>
+                                    <li><a href="#">ООО "Крутотестово"</a></li>
+                                    <li><a href="#">ООO "Бакалея+"</a></li>
+                                    <li><a href="#">ООО "ТОРГОВЫЙ ДОМ ВЕСКО"</a></li>
+                                    <li><a href="#">ООО "Фруктолайн"</a></li>
+                                    <li><a href="#">Anifood</a></li>
+                                    <li><a href="#">ОАО Электростальхлеб</a></li>
+                                    <li><a href="#">ООО «ТРАНСПРОМРЕСУРС»</a></li>
+                                    <li><a href="#">ООО Мульти Бренд</a></li>
+                                    <li><a href="#">ОOО "Русский продукт"</a></li>
+                                    <li><a href="#">OOО ТД "Гейзер-Юг"</a></li>
+                                    <li><a href="#">ООО Сладкие задумки</a></li>
+                                    <li><a href="#">ООО ТД "Майма-Молоко"</a></li>
+                                    <li><a href="#">ООО Саровский Источник</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <nav aria-label="Page navigation">
+                                    <ul class="pagination justify-content-center">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                                <span aria-hidden="true"><i class="fas fa-arrow-left"></i></span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                                <span aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+
+        <!-- include footer -->
+        <div w3-include-html="include/footer.html"></div>
+        <!-- end include footer -->
+
+    </div>
+    <!--end c-offcanvas-content-wrap-->
+
+    <aside id="offCanvas">
+
+        <ul class="nav flex-column" id="offcanvas-menu">
+            <li class="nav-item">
+                <a class="nav-link" href="#">О компании</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Доставка и оплата</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Как сделать заказ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Поставщикам и производителям</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Вход | Регистрация</a>
+            </li>
+        </ul>
+
+
+    </aside>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Форма обратной связи</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        includeHTML();
+    </script>
+
+    <script src="libs/jquery-3.3.1.min.js"></script>
+    <script src="libs/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="libs/js-offcanvas/js-offcanvas.pkgd.min.js"></script>
+    <script src="libs/slick/slick.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
