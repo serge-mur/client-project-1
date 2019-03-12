@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
     <link rel="stylesheet" href="css/styles.css">
 
-    <title>Action page</title>
+    <title>Страница акции</title>
 </head>
 
 <body>
@@ -35,17 +35,12 @@
                                 <li class="breadcrumb-item">
                                     <a href="#">Главная</a>
                                 </li>
-                                <li class="breadcrumb-item active" aria-current="page">Акции</li>
+                                <li class="breadcrumb-item">
+                                    <a href="#">Акции</a>
+                                </li>
+                                <li class="breadcrumb-item active" aria-current="page">Название акции</li>
                             </ol>
                         </nav>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-12 mb-4">
-                        <a href="#" class="d-block text-center" id="banner-1">
-                            <img class="img-fluid" src="https://via.placeholder.com/1080x140" alt="">
-                        </a>
                     </div>
                 </div>
 
@@ -169,35 +164,36 @@
                     </div>
                     <div class="col-12 col-lg-9">
 
-                        <h1 class="d-inline-block catalog-title">Акции</h1>
-                        <span>64 предложений</span>
+                        <h1 class="catalog-title">Название акции</h1>
 
-                        <div class="row my-4">
+                        <div class="text-block">
+                            <p>Молочные продукты, сыры и яйца являются ключевыми элементами в рационе любого
+                                человека. Именно поэтому важно, чтобы они оставались свежими, сохраняя свое
+                                непревзойденное качество и несли пользу для всей семьи.</p>
+                            <p>Ассортимент OTKOROBKI.RU включает в себя обширное количество известных марок и
+                                брендов, занимающихся производством молочных продуктов, сыров и яиц, которые
+                                можно приобрести оптом напрямую от поставщика. Мы предоставляем нашим клиентам
+                                огромное разнообразие молочной продукции: кисломолочные продукты, масло, молоко
+                                и сливки. Также тут вы сможете найти различные виды и сорта сыров: мягкие,
+                                творожные, плавленые, рассольные, полутвердые и твердые.</p>                      
+                        </div>
+                        <div class="action-info my-5">
+                            Дата проведения: <span>хх.хх.хх</span> Регион: <span>хххххххх</span> Производитель: <span>хххххххх</span> Поставщик: <span>хххххххх</span>  
+                        </div>
+                            
 
-                            <div class="col-12 col-sm-6 mb-4">
-                                <a href="#" class="card action-card disabled">
-                                    <img src="img/13376_middle.jpg" class="card-img-top" alt="">
-                                    <div class="label">-25%</div>
-                                    <div class="card-body">
-                                        <h5 class="card-title">Дополнительная скидка на хлопья «Любятово» в Январе</h5>
-                                        <div class="card-action-status">
-                                            Акция завершена
-                                        </div>
-                                    </div>
-                                </a>
+
+                        <div class="row mb-4">
+                            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                                <div w3-include-html="include/product-card.html"></div>
                             </div>
 
-                            <div class="col-12 col-sm-6 mb-4">
-                                <a href="#" class="card action-card">
-                                    <img src="img/13376_middle.jpg" class="card-img-top" alt="">
-                                    <div class="label">-25%</div>
-                                    <div class="card-body">
-                                        <h5 class="card-title">Дополнительная скидка на хлопья «Любятово» в Январе</h5>
-                                        <div class="card-action-status">
-                                            До конца акции осталось <span>12:54:37</span>
-                                        </div>
-                                    </div>
-                                </a>
+                            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                                <div w3-include-html="include/product-card.html"></div>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                                <div w3-include-html="include/product-card.html"></div>
                             </div>
 
                         </div>
@@ -235,7 +231,7 @@
                                         творожные, плавленые, рассольные, полутвердые и твердые.</p>
                                 </div>
                             </div>
-                        </div>
+                        </div>                        
 
                     </div>
                 </div>

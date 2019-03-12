@@ -658,3 +658,7 @@ Action list page css
     font-weight: bold;
     color: #666666;
 }
+.action-info {
+    color: #4d4d4d;
+    font-weight: bold;
+}
