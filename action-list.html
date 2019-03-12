@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="js/include.js"></script>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/js-offcanvas/js-offcanvas.css">
+    <link rel="stylesheet" href="libs/slick/slick.css">
+    <link rel="stylesheet" href="libs/slick/slick-theme.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Action page</title>
+</head>
+
+<body>
+    <div class="c-offcanvas-content-wrap">
+
+        <!-- include header -->
+        <div w3-include-html="include/header.html"></div>
+        <!-- end include header -->
+
+        <main id="main" class="my-2">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <a href="#">Главная</a>
+                                </li>
+                                <li class="breadcrumb-item active" aria-current="page">Акции</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 mb-4">
+                        <a href="#" class="d-block text-center" id="banner-1">
+                            <img class="img-fluid" src="https://via.placeholder.com/1080x140" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-lg-3 mb-4 mb-lg-0">
+                        <aside id="sidebar">
+
+                            <a data-toggle="collapse" href="#collapseExample1" aria-expanded="false"
+                                aria-controls="collapseExample1">
+                                <h3 class="filter-title">Подкатегории</h3>
+                            </a>
+                            <div class="collapse show pb-4" id="collapseExample1">
+                                <ul class="nav flex-column" id="sidebar-menu">
+                                    <li class="nav-item"><a class="nav-link" href="#">Кондитерские изделия</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Бакалея</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Чай, кофе, какао</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Вода, напитки, соки</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Консервация</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Товары для животных</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Молочные продукты, сыры, яйцо</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Мясо, птица, рыба, гастрономия</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Замороженные продукты</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Детское питание и товары для детей</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Овощи, фрукты, зелень</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Бытовая химия, товары для дома, красоты и здоровья</a></li>
+                                </ul>
+
+                            </div>
+
+                            <a data-toggle="collapse" href="#collapseExample2" aria-expanded="false"
+                                aria-controls="collapseExample2">
+                                <h3 class="filter-title">Производители</h3>
+                            </a>
+                            <div class="collapse show pb-4" id="collapseExample2">
+
+                                <input type="text" class="form-control form-control-sm my-2" placeholder="Поиск по производителям">
+
+                                <div class="check-group" id="manufacturers">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            КАРАТ Московский завод плавленых сыров
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                        <label class="form-check-label" for="defaultCheck2">
+                                            Хохланд Руссланд
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                                        <label class="form-check-label" for="defaultCheck3">
+                                            Останкинский молочный комбинат
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+                                        <label class="form-check-label" for="defaultCheck4">
+                                            СПК "Сельскохозяйственная артель (колхоз) "Москва"
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+                                        <label class="form-check-label" for="defaultCheck5">
+                                            Эрманн
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-blue my-2">Показать все варианты +</button>
+
+                            </div>
+
+                            <a data-toggle="collapse" href="#collapseExample3" aria-expanded="false"
+                                aria-controls="collapseExample3">
+                                <h3 class="filter-title">Поставщики</h3>
+                            </a>
+                            <div class="collapse show pb-4" id="collapseExample3">
+
+                                <input type="text" class="form-control form-control-sm my-2" placeholder="Поиск по производителям">
+
+                                <div class="check-group" id="manufacturers">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            КАРАТ Московский завод плавленых сыров
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                        <label class="form-check-label" for="defaultCheck2">
+                                            Хохланд Руссланд
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                                        <label class="form-check-label" for="defaultCheck3">
+                                            Останкинский молочный комбинат
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+                                        <label class="form-check-label" for="defaultCheck4">
+                                            СПК "Сельскохозяйственная артель (колхоз) "Москва"
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+                                        <label class="form-check-label" for="defaultCheck5">
+                                            Эрманн
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-blue my-2">Показать все варианты +</button>
+
+                            </div>
+
+                        </aside>
+                    </div>
+                    <div class="col-12 col-lg-9">
+
+                        <h1 class="d-inline-block catalog-title">Акции</h1>
+                        <span>64 предложений</span>
+
+                        <div class="row my-4">
+
+                            <div class="col-12 col-sm-6 mb-4">
+                                <a href="#" class="card action-card disabled">
+                                    <img src="img/13376_middle.jpg" class="card-img-top" alt="">
+                                    <div class="label">-25%</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Дополнительная скидка на хлопья «Любятово» в Январе</h5>
+                                        <div class="card-action-status">
+                                            Акция завершена
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-12 col-sm-6 mb-4">
+                                <a href="#" class="card action-card">
+                                    <img src="img/13376_middle.jpg" class="card-img-top" alt="">
+                                    <div class="label">-25%</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Дополнительная скидка на хлопья «Любятово» в Январе</h5>
+                                        <div class="card-action-status">
+                                            До конца акции осталось <span>12:54:37</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <nav aria-label="Page navigation">
+                                    <ul class="pagination justify-content-center">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                                <span aria-hidden="true"><i class="fas fa-arrow-left"></i></span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                                <span aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="col-12">
+                                <div class="text-block">
+                                    <p>Молочные продукты, сыры и яйца являются ключевыми элементами в рационе любого
+                                        человека. Именно поэтому важно, чтобы они оставались свежими, сохраняя свое
+                                        непревзойденное качество и несли пользу для всей семьи.</p>
+                                    <p>Ассортимент OTKOROBKI.RU включает в себя обширное количество известных марок и
+                                        брендов, занимающихся производством молочных продуктов, сыров и яиц, которые
+                                        можно приобрести оптом напрямую от поставщика. Мы предоставляем нашим клиентам
+                                        огромное разнообразие молочной продукции: кисломолочные продукты, масло, молоко
+                                        и сливки. Также тут вы сможете найти различные виды и сорта сыров: мягкие,
+                                        творожные, плавленые, рассольные, полутвердые и твердые.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+
+        <!-- include footer -->
+        <div w3-include-html="include/footer.html"></div>
+        <!-- end include footer -->
+
+    </div>
+    <!--end c-offcanvas-content-wrap-->
+
+    <aside id="offCanvas">
+
+        <ul class="nav flex-column" id="offcanvas-menu">
+            <li class="nav-item">
+                <a class="nav-link" href="#">О компании</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Доставка и оплата</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Как сделать заказ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Поставщикам и производителям</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Вход | Регистрация</a>
+            </li>
+        </ul>
+
+
+    </aside>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Форма обратной связи</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        includeHTML();
+    </script>
+
+<script src="libs/jquery-3.3.1.min.js"></script>
+<script src="libs/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="libs/js-offcanvas/js-offcanvas.pkgd.min.js"></script>
+<script src="libs/slick/slick.min.js"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+
+</html>
