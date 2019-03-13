@@ -40,6 +40,33 @@ h3 {
     border: 1px solid #ebebeb;
     border-radius: 10px;
 }
+.modal-header {
+    border-bottom: none;
+}
+
+/* modal registration */
+.right-modal {
+    background-color: #f6f6f6;
+}
+#modal-registration .form-control {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.btn-form {
+    margin: 0 auto;
+    font-size: 1.25rem;
+    background-color: #90de23;
+    color: #fff;
+    border-radius: 50px;
+    width: 100%;
+    border: 2px solid #90de23;
+}
+.btn-form:hover {
+    color: #90de23;
+    background-color: #f1fae8;
+    border: 2px solid #90de23;
+}
 
 /* modal region */
 #modal-region .column {
