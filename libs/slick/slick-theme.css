@@ -66,12 +66,15 @@
 .slick-prev:before,
 .slick-next:before
 {
-    font-family: 'slick';
+    font-family: 'Font Awesome\ 5 Free';
+    font-weight: 900; 
+    /* font-family: 'slick'; */
     font-size: 20px;
     line-height: 1;
 
     opacity: .75;
-    color: white;
+    /* color: white; */
+    color: #e6e6e6;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -88,7 +91,8 @@
 }
 .slick-prev:before
 {
-    content: '←';
+    /* content: '←'; */
+    content: "\f060";
 }
 [dir='rtl'] .slick-prev:before
 {
@@ -106,7 +110,8 @@
 }
 .slick-next:before
 {
-    content: '→';
+    /* content: '→'; */
+    content: "\f061";
 }
 [dir='rtl'] .slick-next:before
 {

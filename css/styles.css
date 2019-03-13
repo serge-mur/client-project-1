@@ -202,6 +202,10 @@ h3 {
 .btn-search-collapse {
     color: #666666;
 }
+.percent {
+    background-color: #ffe500;
+    border-radius: 50%;
+}
 
 /* sidebar */
 #sidebar-menu .nav-link {
@@ -349,6 +353,9 @@ h3 {
 .product-card .card-price span {
     font-size: 0.75rem;
 }
+.product-card .card-price i[class="fas fa-ruble-sign"] {
+    font-size: 1.5rem;
+}
 .product-card .btn-buy {
     font-size: 1.25rem;
     background-color: #90de23;
@@ -432,6 +439,32 @@ Custom media queries
 Main page styles
 ================
 */
+#main-page-menu {
+    border: 1px solid #ececec;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 8px 8px 45px -26px rgba(0, 0, 0, 0.5);
+}
+#main-page-menu .nav-item {
+    border-bottom: 1px solid #ececec;
+}
+
+#main-page-menu .nav-item:last-child {
+    border-bottom: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;    
+}
+#main-page-menu .nav-link {
+    font-size: 1rem;
+    color: #666666;
+    padding: .9rem 1rem .9rem 2rem;
+}
+#main-page-menu .nav-link:hover {
+    color: #000;
+    background-color: #f8f8f8;
+}
+
+/* 
 #catalog-links a {
     display: flex;
     position: relative;
@@ -453,8 +486,8 @@ Main page styles
 #catalog-links a>span {
     text-align: right;
     color: #666666;
-}
-
+} */
+/* 
 #advantage i {
     display: block;
     color: #b3b3b3;
@@ -466,7 +499,7 @@ Main page styles
     font-size: 0.875rem;
     color: #b3b3b3;
     text-align: center;
-}
+} */
 
 #big-banner {
     background: url(../img/main/first_banner.png) no-repeat center center;
@@ -497,6 +530,18 @@ Main page styles
     line-height: 3.75rem;
     color: #000;
     font-weight: bold;
+}
+.card-slider .slick-slide {
+    margin: 0 1rem;
+}
+.brands-slider .slick-track {
+    display: flex;
+}
+.brands-slider .slick-track .slick-slide {
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: center;
 }
 
 /* 
