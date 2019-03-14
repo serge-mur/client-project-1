@@ -583,9 +583,80 @@ Product page css
     border: 2px solid #f2f2f2;
     border-radius: 10px;
 }
+.best-offer-block .delivery-block {
+    font-size: 1rem;
+    font-weight: bold;
+}
+.best-offer-block .delivery-block span:first-child {
+    margin-right: 1rem;
+}
+.best-offer-block .delivery-block i {
+    font-size: 1rem;
+    color: #b3b3b3;
+}
+.best-offer-block .unit-price {
+    font-size: 1rem;
+    color: #cfcfcf;
+}
+.best-offer-block .total-price {
+    font-size: 1.875rem;
+    font-weight: bold;    
+    color: #90de23;
+}
+.best-offer-block .total-price span {
+    font-size: 0.75rem;
+}
 
+.best-offer-block .total-price i[class="fas fa-ruble-sign"] {
+    font-size: 1.5rem;
+}
+.btn-buy {
+    font-size: 1.25rem;
+    background-color: #90de23;
+    color: #fff;
+    border-radius: 50px;
+    width: 100%;
+    border: 2px solid #90de23;
+}
+.btn-buy:hover {
+    color: #90de23;
+    background-color: #f1fae8;
+    border: 2px solid #90de23;
+}
 
+.all-providers-block .delivery-block {
+    font-size: 0.875rem;
+}
+.all-providers-block .delivery-block i {
+    font-size: 0.875rem;
+    color: #b3b3b3;
+}
 
+.all-providers-block .unit-price {
+    font-size: 0.875rem;
+    color: #cfcfcf;
+}
+.all-providers-block .total-price {
+    font-size: 1rem;
+    font-weight: bold;    
+    color: #90de23;
+}
+.all-providers-block .total-price span {
+    font-size: 0.75rem;
+}
+.all-providers-block .provider-item {
+    border-bottom: 1px solid #f2f2f2;
+}
+.all-providers-block .provider-item:last-child {
+    border-bottom: none;
+}
+.quantity-block input {
+    width: 2rem;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+    border: none;
+}
 /* 
 ================
 Welcome page css
