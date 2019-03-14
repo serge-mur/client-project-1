@@ -53,118 +53,121 @@
                     <div class="col-12 col-lg-3 mb-4 mb-lg-0">
                         <aside id="sidebar">
 
-                            <a data-toggle="collapse" href="#collapseExample1" aria-expanded="false"
-                                aria-controls="collapseExample1">
-                                <h3 class="filter-title">Подкатегории</h3>
-                            </a>
-                            <div class="collapse show pb-4" id="collapseExample1">
-                                <ul class="nav flex-column" id="sidebar-menu">
-                                    <li class="nav-item"><a class="nav-link" href="#">Кондитерские изделия</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#">Бакалея</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#">Чай, кофе, какао</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#">Вода, напитки, соки</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#">Консервация</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#">Товары для животных</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#">Молочные продукты, сыры, яйцо</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#">Мясо, птица, рыба, гастрономия</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#">Замороженные продукты</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#">Детское питание и товары для детей</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#">Овощи, фрукты, зелень</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#">Бытовая химия, товары для дома, красоты и здоровья</a></li>
-                                </ul>
+                            <a class="btn btn-green d-lg-none mb-2" data-toggle="collapse" href="#collapse-sidebar" aria-expanded="false" aria-controls="collapseSidebar"><span class="badge badge-light">4</span> Фильтры</a>
+                            
+                            <div class="collapse show" id="collapse-sidebar">
+                                <a data-toggle="collapse" href="#collapseExample1" aria-expanded="false"
+                                    aria-controls="collapseExample1">
+                                    <h3 class="filter-title">Подкатегории</h3>
+                                </a>
+                                <div class="collapse show pb-4 collapse-block" id="collapseExample1">
+                                    <ul class="nav flex-column" id="sidebar-menu">
+                                        <li class="nav-item"><a class="nav-link" href="#">Кондитерские изделия</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#">Бакалея</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#">Чай, кофе, какао</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#">Вода, напитки, соки</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#">Консервация</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#">Товары для животных</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#">Молочные продукты, сыры, яйцо</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#">Мясо, птица, рыба, гастрономия</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#">Замороженные продукты</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#">Детское питание и товары для детей</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#">Овощи, фрукты, зелень</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#">Бытовая химия, товары для дома, красоты и здоровья</a></li>
+                                    </ul>
 
-                            </div>
-
-                            <a data-toggle="collapse" href="#collapseExample2" aria-expanded="false"
-                                aria-controls="collapseExample2">
-                                <h3 class="filter-title">Производители</h3>
-                            </a>
-                            <div class="collapse show pb-4" id="collapseExample2">
-
-                                <input type="text" class="form-control form-control-sm my-2" placeholder="Поиск по производителям">
-
-                                <div class="check-group" id="manufacturers">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                        <label class="form-check-label" for="defaultCheck1">
-                                            КАРАТ Московский завод плавленых сыров
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
-                                        <label class="form-check-label" for="defaultCheck2">
-                                            Хохланд Руссланд
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
-                                        <label class="form-check-label" for="defaultCheck3">
-                                            Останкинский молочный комбинат
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
-                                        <label class="form-check-label" for="defaultCheck4">
-                                            СПК "Сельскохозяйственная артель (колхоз) "Москва"
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
-                                        <label class="form-check-label" for="defaultCheck5">
-                                            Эрманн
-                                        </label>
-                                    </div>
                                 </div>
 
-                                <button class="btn btn-blue my-2">Показать все варианты +</button>
+                                <a data-toggle="collapse" href="#collapseExample2" aria-expanded="false"
+                                    aria-controls="collapseExample2">
+                                    <h3 class="filter-title">Производители</h3>
+                                </a>
+                                <div class="collapse show pb-4 collapse-block" id="collapseExample2">
 
-                            </div>
+                                    <input type="text" class="form-control form-control-sm my-2" placeholder="Поиск по производителям">
 
-                            <a data-toggle="collapse" href="#collapseExample3" aria-expanded="false"
-                                aria-controls="collapseExample3">
-                                <h3 class="filter-title">Поставщики</h3>
-                            </a>
-                            <div class="collapse show pb-4" id="collapseExample3">
+                                    <div class="check-group" id="manufacturers">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                            <label class="form-check-label" for="defaultCheck1">
+                                                КАРАТ Московский завод плавленых сыров
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                            <label class="form-check-label" for="defaultCheck2">
+                                                Хохланд Руссланд
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                                            <label class="form-check-label" for="defaultCheck3">
+                                                Останкинский молочный комбинат
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+                                            <label class="form-check-label" for="defaultCheck4">
+                                                СПК "Сельскохозяйственная артель (колхоз) "Москва"
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+                                            <label class="form-check-label" for="defaultCheck5">
+                                                Эрманн
+                                            </label>
+                                        </div>
+                                    </div>
 
-                                <input type="text" class="form-control form-control-sm my-2" placeholder="Поиск по производителям">
+                                    <button class="btn btn-blue my-2">Показать все варианты +</button>
 
-                                <div class="check-group" id="manufacturers">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                        <label class="form-check-label" for="defaultCheck1">
-                                            КАРАТ Московский завод плавленых сыров
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
-                                        <label class="form-check-label" for="defaultCheck2">
-                                            Хохланд Руссланд
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
-                                        <label class="form-check-label" for="defaultCheck3">
-                                            Останкинский молочный комбинат
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
-                                        <label class="form-check-label" for="defaultCheck4">
-                                            СПК "Сельскохозяйственная артель (колхоз) "Москва"
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
-                                        <label class="form-check-label" for="defaultCheck5">
-                                            Эрманн
-                                        </label>
-                                    </div>
                                 </div>
 
-                                <button class="btn btn-blue my-2">Показать все варианты +</button>
+                                <a data-toggle="collapse" href="#collapseExample3" aria-expanded="false"
+                                    aria-controls="collapseExample3">
+                                    <h3 class="filter-title">Поставщики</h3>
+                                </a>
+                                <div class="collapse show pb-4 collapse-block" id="collapseExample3">
 
+                                    <input type="text" class="form-control form-control-sm my-2" placeholder="Поиск по производителям">
+
+                                    <div class="check-group" id="manufacturers">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                            <label class="form-check-label" for="defaultCheck1">
+                                                КАРАТ Московский завод плавленых сыров
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                            <label class="form-check-label" for="defaultCheck2">
+                                                Хохланд Руссланд
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                                            <label class="form-check-label" for="defaultCheck3">
+                                                Останкинский молочный комбинат
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+                                            <label class="form-check-label" for="defaultCheck4">
+                                                СПК "Сельскохозяйственная артель (колхоз) "Москва"
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+                                            <label class="form-check-label" for="defaultCheck5">
+                                                Эрманн
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <button class="btn btn-blue my-2">Показать все варианты +</button>
+
+                                </div>
                             </div>
-
                         </aside>
                     </div>
                     <div class="col-12 col-lg-9">
@@ -174,16 +177,16 @@
 
                         <div class="sorting-block my-4">
                             <div class="row">
-                                <div class="col-12 col-lg-6">
+                                <div class="col-12 col-xl-6 mb-2">
                                     <div class="sorting-block-left">
                                         <span>по популярности</span> | <a href="#">по цене за единицу</a> | <a
                                             href="#">по названию</a>
                                     </div>
                                 </div>
-                                <div class="col-12 col-lg-6 text-right">
+                                <div class="col-12 col-xl-6">
                                     <div class="sorting-block-right">
 
-                                        <div class="form-row justify-content-end align-items-center">
+                                        <div class="form-row justify-content-xl-end align-items-center">
                                             <div class="col-auto">
                                                 <i class="fas fa-grip-lines"></i>
                                             </div>

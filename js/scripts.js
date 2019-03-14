@@ -45,7 +45,7 @@ $(document).ready(function () {
         slidesToScroll: 1,
         arrows: true,
         infinite: false,
-        dots: true,        
+        dots: true,
         asNavFor: '.slider-nav'
     });
     $('.slider-nav').slick({
@@ -63,16 +63,32 @@ $(document).ready(function () {
                     slidesToScroll: 3
                 }
             }
-        ]        
+        ]
     });
 
 
-    if (window.matchMedia("screen and (min-width: 1px) and (max-width:991px)").matches) {
-        // console.log('mobile');
-        if ($('#sidebar .collapse').hasClass('show')) {
+    // if (window.matchMedia("screen and (min-width: 1px) and (max-width:991px)").matches) {
+    //     // console.log('mobile');
+    //     if ($('#sidebar .collapse').hasClass('show')) {
+    //         $('#sidebar .collapse').removeClass('show');
+    //     }
+    // }
+
+    function toggleSidebar() {
+        var w = $(window).width();
+        if (w <= 991) {
             $('#sidebar .collapse').removeClass('show');
+        } else {
+            $('#sidebar .collapse').addClass('show');
         }
     }
+
+    $(window).resize(function () {
+        toggleSidebar();
+    });
+
+    toggleSidebar();
+
 
     // Sticky navbar
     // =========================
