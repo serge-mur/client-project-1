@@ -297,7 +297,11 @@ h3 {
     background-color: #f3f9ff;
 }
 
-/* catalog page */
+/* 
+============
+catalog page
+============
+*/
 
 /* breadcrumb */
 .breadcrumb {
@@ -348,6 +352,7 @@ h3 {
     text-decoration: none;
     border-bottom: none;
 }
+
 
 /* product card */
 .product-card {
@@ -715,9 +720,9 @@ Welcome page css
 }
 
 /* 
-================
+=========================
 Provisioner list page css
-================
+=========================
 */
 .list-view > * {
     padding: 0 1rem;
@@ -785,9 +790,9 @@ Provisioner list page css
     text-decoration: none;
 }
 /* 
-================
+====================
 Action list page css
-================
+====================
 */
 /* action card */
 .action-card {
@@ -835,4 +840,63 @@ Action list page css
 .action-info {
     color: #4d4d4d;
     font-weight: bold;
+}
+/* 
+================
+Cart styles
+================
+*/
+
+#modal-cart .modal-title {
+    color: #000;
+    font-size: 2.813rem;
+}
+#modal-cart .modal-title span {
+    color: #cfcfcf;
+    font-size: 1rem;
+    /* vertical-align: bottom; */
+}
+#modal-cart .modal-header {
+    border-bottom: 2px solid #e8e8e8;
+}
+.order-block .cart-title {
+    margin-right: 1rem;
+}
+.order-block .delivery-block {
+    font-size: 0.875rem;
+    font-weight: bold;
+}
+.order-block .delivery-block span:first-child {
+    margin-right: .5rem;
+}
+.order-block .delivery-block i {
+    font-size: 0.875rem;
+    color: #b3b3b3;
+}
+.order-block .cart-provis {
+    color: #ccc;
+}
+.order-block .cart-total-price {
+    font-size: 1.875rem;
+    color: #90de23;
+    line-height: 1.875rem;
+    font-weight: bold;
+    vertical-align: middle;
+}
+.order-item {
+    border-bottom: 2px solid #e8e8e8;
+}
+.order-item .item-name,
+.order-item .item-pack {
+    color: #666666;
+}
+.order-item .item-unit-price,
+.order-item .item-total-price {
+    font-size: 1.25rem;
+    color: #000;
+    font-weight: bold;
+}
+.order-item .item-unit-price span {
+    font-size: 1rem;
+    color: #cfcfcf;
 }
