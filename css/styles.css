@@ -900,3 +900,73 @@ Cart styles
     font-size: 1rem;
     color: #cfcfcf;
 }
+
+/* 
+=================
+Order page styles
+=================
+*/
+
+.order-tab-block:hover {
+    cursor: pointer;
+}
+.order-tab-block.border.active,
+.delivery-tab-block.border.active {
+    border: 2px solid #2175ff!important;
+    background-color: #f2f7ff;
+}
+.order-tab-block .provider {
+    color: #cccccc;
+}
+.order-block h2 {
+    font-size: 2.813rem;
+}
+.order-block .provider {
+    font-size: 1rem;
+    color: #cccccc;
+}
+.order-block .order-confirm-block .price {
+    font-size: 2.813rem;
+    font-weight: bold;
+    color: #000;
+}
+.order-block .order-confirm-block .btn-confirm {
+    border-radius: 30px;
+    background-color: #90de23;
+    color: #fff;    
+    font-size: 1rem;
+    width: 100%;
+}
+.order-block .order-confirm-block .btn-confirm:hover {
+    background-color: #f1fae8;
+    color: #90de23;
+}
+.order-cart .name {
+    font-size: 1.25rem;
+    color: #000;
+    font-weight: bold;
+}
+.order-cart .manufacturer {
+    color: #666666;
+}
+.order-cart .pack {
+    color: #666666;
+}
+.order-cart .pack-price {
+    font-size: 1.25rem;
+    color: #000;
+    font-weight: bold;
+}
+.order-cart .pack-price span {
+    font-size: 1rem;
+    color: #cfcfcf;
+}
+.order-cart .pack-weight {
+    font-size: 1rem;
+    color: #cfcfcf;
+}
+.order-cart .price {
+    font-size: 1.25rem;
+    color: #000;
+    font-weight: bold;    
+}
