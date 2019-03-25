@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="js/include.js"></script>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/js-offcanvas/js-offcanvas.css">
+    <link rel="stylesheet" href="libs/slick/slick.css">
+    <link rel="stylesheet" href="libs/slick/slick-theme.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Client page</title>
+</head>
+
+<body>
+    <div class="c-offcanvas-content-wrap">
+
+        <!-- include header -->
+        <div w3-include-html="include/header.html"></div>
+        <!-- end include header -->
+
+        <main id="main" class="my-2">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <a href="#">Главная</a>
+                                </li>
+                                <li class="breadcrumb-item active" aria-current="page">Личный кабинет</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+
+                        <h1 class="d-inline-block catalog-title mb-4">Личный кабинет</h1>
+                        <span>Клиент</span>
+
+                        <ul class="nav nav-tabs" id="client-tabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="true">Личные данные</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="orders-tab" data-toggle="tab" href="#orders" role="tab" aria-controls="orders" aria-selected="false">Заказы</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false">Сообщения</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="special-tab" data-toggle="tab" href="#special" role="tab" aria-controls="special" aria-selected="false">Специальные условия</a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content py-5" id="client-tabs-content">
+                            <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <div class="row">
+                                    <div class="col-12 col-sm-8 col-md-6 col-lg-4 mx-auto">
+                                        <form>
+                                            <input type="text" class="form-control mb-3" id="name" placeholder="Имя">
+                                            <input type="text" class="form-control mb-3" id="surname" placeholder="Фамилия">
+                                            <select type="text" class="form-control mb-3" id="buyer-type" placeholder="">
+                                                <option value="0" selected>Выберите тип покупателя</option>
+                                                <option value="1">Торговая сеть</option>
+                                                <option value="2">Магазин</option>
+                                                <option value="3">Ресторан или кафе</option>
+                                                <option value="4">Бизнес-центр</option>
+                                                <option value="5">Офис компании</option>
+                                                <option value="6">Другое (указать)</option>
+                                            </select>
+                                            <input type="text" class="form-control mb-3" id="company-name" placeholder="Название организации">
+                                            <input type="text" class="form-control mb-3" id="phone" placeholder="Телефон">
+                                            <input type="text" class="form-control mb-3" id="phone-dop" placeholder="Дополнительный Телефон">
+                                            <input type="email" class="form-control mb-3" id="email" placeholder="E-mail">                                            
+                                            <input type="password" class="form-control mb-3" id="password" placeholder="Пароль">                                            
+                                            <input type="password" class="form-control mb-3" id="new-password" placeholder="Новый пароль">                                            
+
+                                            <div class="mb-3"><a href="#" data-toggle="modal" data-target="#modal-add-adress">Добавить адрес доставки</a> <i class="fas fa-plus-circle"></i></div>
+                                            
+                                            <input type="text" class="form-control mb-3" id="city" placeholder="Город">
+                                            <input type="text" class="form-control mb-3" id="contact-person" placeholder="Контактное лицо">
+
+                                            <div class="form-group form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">Получать уведомления о статусе заказов на e-mail</label>
+                                            </div>
+                                            <div class="form-group form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                                                <label class="form-check-label" for="exampleCheck2">Получать новости и информацию от Откоробки.ру</label>
+                                            </div>               
+                                            <button type="submit" class="btn btn-form">Сохранить</button>
+                                        </form>                                           
+                                    </div>
+                                </div> 
+                            
+                            </div>
+                            <div class="tab-pane fade" id="orders" role="tabpanel" aria-labelledby="orders-tab">
+                                <div class="history-block px-4 pt-4 mb-4 border">
+                                    <p><b>СТАТУС ЗАКАЗА (условные обозначения):</b></p>
+                                    <div class="row text-center">
+                                        <div class="col-6 col-sm-2">
+                                            <img src="img/status1.png" alt="">
+                                            <p>Отправлен поставщику</p>
+                                        </div>
+                                        <div class="col-6 col-sm-2">
+                                            <img src="img/status2.png" alt="">
+                                            <p>Принят</p>                                            
+                                        </div>
+                                        <div class="col-6 col-sm-2">
+                                            <img src="img/status3.png" alt="">
+                                            <p>Согласован с покупателем и подготовлен к отгрузке</p>                                            
+                                        </div>
+                                        <div class="col-6 col-sm-2">
+                                            <img src="img/status4.png" alt="">
+                                            <p>Выполнен</p>                                            
+                                        </div>
+                                        <div class="col-6 col-sm-2">
+                                            <img src="img/status5.png" alt="">
+                                            <p>Отменен поставщиком</p>                                            
+                                        </div>
+                                        <div class="col-6 col-sm-2">
+                                            <img src="img/status6.png" alt="">
+                                            <p>Отменен покупателем</p>                                            
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h3>Ваши заказы (1)</h3>
+                                <table class="table table-bordered table-responsive-lg">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">№ заказа</th>
+                                            <th scope="col">Дата</th>
+                                            <th scope="col">Дистрибьютор</th>
+                                            <th scope="col">Сумма,руб.</th>
+                                            <th scope="col">Доставка</th>
+                                            <th scope="col">Статус заказа</th>
+                                            <th scope="col">Оставить отзыв</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>21.03.2019</td>
+                                            <td>ООО Александров</td>
+                                            <td>1000</td>
+                                            <td>Самовывоз</td>
+                                            <td>Выполнен</td>
+                                            <td>Без отзыва</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+                                <div class="row">
+                                    <div class="col-12 col-sm-8 col-md-6 col-lg-4 mx-auto">
+                                        <form>
+                                            <p>Введите текст сообщения и нажмите кнопку “Отправить сообщение”</p>
+                                            <input type="text" class="form-control mb-3" id="theme" placeholder="Тема сообщения">                                           
+                                            <textarea type="text" class="form-control mb-3" id="message" placeholder="Текст сообщения"></textarea>
+                                            <button type="submit" class="btn btn-form">Отправить сообщение</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="special" role="tabpanel" aria-labelledby="special-tab">
+                                <h3>Склады, предоставляющие спецусловия</h3>
+                                <p>У вас нет спецусловий</p>
+                            </div>
+                        </div>                      
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+
+        <!-- Modal add adress -->
+        <div class="modal fade" id="modal-add-adress" tabindex="-1" role="dialog" aria-labelledby="modal-add-adress" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="adressModalLabel">Новый адрес доставки</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body p-5">
+                        <form>
+                            <input type="text" class="form-control mb-3" id="region" placeholder="Регион">
+                            <select type="text" class="form-control mb-3" id="district" placeholder="">
+                                <option value="0" selected>Район</option>
+                                <option value="1">Москва</option>
+                                <option value="2">Урюпинск</option>
+                                <option value="3">Магадан</option>
+                            </select>                    
+                            <input type="text" class="form-control mb-3" id="adress" placeholder="Адрес">
+                            <textarea type="text" class="form-control mb-3" id="note" placeholder="Примечание"></textarea>
+                            <button type="submit" class="btn btn-form">Сохранить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- include footer -->
+        <div w3-include-html="include/footer.html"></div>
+        <!-- end include footer -->
+
+    </div>
+    <!--end c-offcanvas-content-wrap-->
+
+    <aside id="offCanvas">
+
+        <ul class="nav flex-column" id="offcanvas-menu">
+            <li class="nav-item">
+                <a class="nav-link" href="#">О компании</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Доставка и оплата</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Как сделать заказ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Поставщикам и производителям</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Вход | Регистрация</a>
+            </li>
+        </ul>
+
+
+    </aside>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Форма обратной связи</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        includeHTML();
+    </script>
+
+<script src="libs/jquery-3.3.1.min.js"></script>
+<script src="libs/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="libs/js-offcanvas/js-offcanvas.pkgd.min.js"></script>
+<script src="libs/slick/slick.min.js"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+
+</html>
