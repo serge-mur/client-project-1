@@ -43,6 +43,9 @@ h3 {
 .modal-header {
     border-bottom: none;
 }
+.modal-footer {
+    border-top: none;
+}
 .badge {
     border-radius: 50%;
 }
@@ -334,6 +337,57 @@ catalog page
     font-size: 0.875rem;
     color: #cfcfcf;
 }
+
+/* modal all */
+#modal-all .modal-footer {
+    display: block;
+    background-color: #f6f6f6;
+}
+#modal-all .column {
+    padding: 0;
+    list-style: none;
+    column-count: 3;
+}
+#modal-all #pills-tab a:hover {
+    text-decoration: none;
+}
+#modal-all #pills-tab a.active {
+    border-bottom: 1px dashed #0075ff;
+}
+#modal-all .column.cat {
+    font-weight: bold;
+}
+#modal-all .column a {
+    display: block;
+    font-size: 0.875rem;
+    padding: .25rem 0;
+    text-decoration: underline;
+    color: #0075ff;
+}
+#modal-all .column a:hover {
+    text-decoration: none;
+}
+#modal-all .liters-en a,
+#modal-all .liters-ru a,
+#modal-all .liters-en span,
+#modal-all .liters-ru span {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-right: .5rem;
+    font-weight: bold; 
+}
+#modal-all .liters-en a,
+#modal-all .liters-ru a {
+    color: #0075ff;
+}
+#modal-all .liters-en span,
+#modal-all .liters-ru span {
+    color: #b8b8b8; 
+}
+
+
 
 /* sorting block */
 .sorting-block {
@@ -761,8 +815,7 @@ Provisioner list page css
 }
 .liters-en span,
 .liters-ru span {
-    color: #b8b8b8;
-  
+    color: #b8b8b8; 
 }
 .category-list {
     padding: 0;
