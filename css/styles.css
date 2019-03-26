@@ -358,6 +358,7 @@ catalog page
 .product-card {
     border: 2px solid #ececec;
     border-radius: 10px;
+    height: 100%;
 }
 .product-card>a {
     display: block;
@@ -367,6 +368,13 @@ catalog page
     padding: 1rem 1rem 0 1rem;
     max-width: 180px;
     max-height: 180px;
+}
+.product-card .card-footer {
+    padding: .75rem 1.25rem;
+    background-color: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: none;
 }
 .product-card .label {
     position: absolute;
