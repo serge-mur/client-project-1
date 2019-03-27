@@ -796,6 +796,53 @@ Product page css
     font-weight: bold;
     border: none;
 }
+/* action styles */
+.action-block {
+    border: 2px solid #ffef00;
+    background-color: #fffae6;
+    border-radius: 10px;
+}
+.action-title-label {
+    color: #fff;
+    background-color: #ffef00;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: .2rem 1rem;
+    border-radius: 10px;
+}
+.best-offer-block.action  {
+    border: 2px solid #ffef00;
+}
+.best-offer-block.action .total-price {
+    font-size: 1.875rem;
+    font-weight: bold;    
+    color: #ffef00;
+}
+.best-offer-block.action .btn-buy,
+.all-providers-block .provider-item.action .btn-buy {
+    font-size: 1.25rem;
+    background-color: #ffef00;
+    color: #fff;
+    border-radius: 50px;
+    width: 100%;
+    border: 2px solid #ffef00;
+}
+.best-offer-block.action .btn-buy:hover,
+.all-providers-block .provider-item.action .btn-buy:hover {
+    color: #ffef00;
+    background-color: #f1fae8;
+    border: 2px solid #ffef00;
+}
+.all-providers-block .provider-item.action {
+    border-top: 2px solid #ffef00;    
+    border-bottom: 2px solid #ffef00;
+    background-color: #fffae6;   
+}
+.all-providers-block .provider-item.action .total-price {
+    color: #ffef00;
+}
+
 /* 
 ================
 Welcome page css
