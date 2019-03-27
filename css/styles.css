@@ -414,6 +414,11 @@ catalog page
     border-radius: 10px;
     height: 100%;
 }
+.product-card.action {
+    border: 2px solid #ffef00;
+    border-radius: 10px;
+    height: 100%;
+}
 .product-card>a {
     display: block;
     margin: 0 auto;
@@ -440,6 +445,22 @@ catalog page
     padding: .5rem .5rem;
     border-radius: 10px 0 0 10px;
 }
+.product-card .action-label {
+    display: none;
+}
+.product-card.action .action-label {
+    display: block;
+    position: absolute;
+    top: -13px;
+    right: 2rem;
+    color: #fff;
+    background-color: #ffef00;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: .2rem 1rem;
+    border-radius: 10px;
+}
 .product-card .card-title {
     font-size: 1rem;
     font-weight: bold;
@@ -454,6 +475,10 @@ catalog page
 .product-card .card-price {
     font-size: 1.875rem;
     color: #90de23;
+}
+.product-card.action .card-price {
+    font-size: 1.875rem;
+    color: #ffef00;
 }
 .product-card .card-price span {
     font-size: 0.75rem;
@@ -473,6 +498,19 @@ catalog page
     color: #90de23;
     background-color: #f1fae8;
     border: 2px solid #90de23;
+}
+.product-card.action .btn-buy {
+    font-size: 1.25rem;
+    background-color: #ffef00;
+    color: #fff;
+    border-radius: 50px;
+    width: 100%;
+    border: 2px solid #ffef00;
+}
+.product-card.action .btn-buy:hover {
+    color: #ffef00;
+    background-color: #f1fae8;
+    border: 2px solid #ffef00;
 }
 .text-block {
     font-size: 0.875rem;
