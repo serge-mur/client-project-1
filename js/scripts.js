@@ -62,6 +62,7 @@ $(document).ready(function () {
         dots: true,
         asNavFor: '.slider-nav'
     });
+
     $('.slider-nav').slick({
         slidesToShow: 6,
         slidesToScroll: 1,
@@ -79,6 +80,14 @@ $(document).ready(function () {
             }
         ]
     });
+
+    $('.reviews-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        infinite: false,
+        dots: true,
+    });    
 
 
     // if (window.matchMedia("screen and (min-width: 1px) and (max-width:991px)").matches) {
