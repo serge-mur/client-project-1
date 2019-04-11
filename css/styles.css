@@ -569,7 +569,22 @@ Custom media queries
 */
  
 @media (max-width: 575px) { 
-
+    #welcome h1,
+    #our-customers h2,
+    #action-description h2,
+    #appeal h3,
+    #slogan h3 {
+        font-size: 2rem!important;        
+    }
+    
+    #shopping-now h2,
+    #how-works h2,
+    #buying-process h2,
+    #why-comfortable h2,
+    #our-customers h2 ,
+    #our-assortment h2 {
+        font-size: 2rem!important;
+    }
 }
 @media (max-width: 991px) { 
     #sidebar {
@@ -1146,13 +1161,133 @@ Client page styles
     background-color: #9acd32;
     border-color: #dee2e6 #dee2e6 #fff;
 }
-  
-
-
-
 .history-block {
     background-color: #f6f6f6;
 }
 .history-block img {
     margin-bottom: 1rem;;
 }
+
+/* 
+=================
+About page styles
+=================
+*/
+#welcome h1 {
+    font-size: 3.4375rem;
+}
+#welcome h1 span {
+    color: #99ce4b;
+}
+#welcome .text-block {
+    background-color: #f1fae8;
+    border-radius: 10px;
+    font-size: 1.25rem;
+    position: relative;
+}
+#welcome .stamp {
+    position: absolute;
+    right: -70px;
+    top: -55px;
+}
+#advantage {
+    background-color: #fcf8f5;
+}
+#advantage .digit {
+    font-size: 3.75rem;
+    color: #99ce4b;    
+}
+#advantage .digit span {
+    font-size: 1.5rem;
+    color: #8f8f8f;    
+}
+#advantage p {
+    font-size: 1.25rem;
+    color: #000;    
+}
+#shopping-now h2,
+#how-works h2,
+#buying-process h2,
+#why-comfortable h2,
+#our-customers h2 ,
+#our-assortment h2 {
+    font-size: 2.8125rem;
+    color: #000;
+}
+#shopping-now p {
+    font-size: 1.5rem;
+    color: #000;    
+}
+#how-works p {
+    font-size: 1.5rem;
+    color: #000;    
+}
+#buying-process p {
+    margin-top: 1.5rem;;
+    font-size: 1.5rem;
+    color: #000;    
+}
+#why-comfortable p {
+    font-size: 1.5rem;
+    color: #000;    
+}
+#why-comfortable p span {
+    font-size: 1.25rem;
+    color: #000;    
+}
+#action-description {
+    background: url(../img/main/second_form.png) no-repeat center center;
+    background-size: cover;
+}
+#action-description .description-title {
+    font-size: 2.75rem;
+    line-height: 1;
+    color: #000;
+    font-weight: bold;
+}
+#our-customers {
+    background: url(../img/main/first_banner.png) no-repeat center center;
+    background-size: cover;
+}
+#our-customers .banner-title {
+    font-size: 2.75rem;
+    line-height: 1;
+    color: #000;
+    font-weight: bold;
+}
+#our-customers ul {
+    list-style: none;
+    padding: 0;    
+}
+#our-customers ul li {
+    font-size: 1.5rem;
+    color: #000;
+}
+#our-customers li::before {
+    content: "•";
+    color: #99ce4b;
+    padding-right: 1rem;
+}
+#appeal h3 {
+    font-size: 2.8125rem;
+    color: #000;
+}
+.reviews-slider p {
+    font-size: 1.5rem;
+    color: #000;
+}
+.reviews-slider p.name {
+    font-size: 1rem;
+    color: #898888;
+    text-transform: uppercase;
+}
+#slogan {
+    background-color: #eaf7ee;
+}
+#slogan h3 {
+    font-size: 3.4375rem;
+}
+#slogan h3 span {
+    color: #99ce4b;
+}
+
