@@ -5,6 +5,12 @@ $(document).ready(function () {
         triggerButton: '#triggerButton'
     });
 
+    // Bottom fly form subscribe
+    $('#off-canvas-bottom').offcanvas({
+        modifiers: 'bottom, overlay',
+        triggerButton: '#off-canvas-bottom-trigger'
+    });
+
     // sliders
     $('.card-slider').slick({
         dots: true,

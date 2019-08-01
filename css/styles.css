@@ -1291,3 +1291,52 @@ About page styles
     color: #99ce4b;
 }
 
+/* fly subscribe */
+#off-canvas-bottom-trigger {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    color: #0074ff;
+    font-size: 3rem;
+    opacity: .5rem;
+    z-index: 1050;
+}
+#off-canvas-bottom-trigger:hover {
+    cursor: pointer;
+}
+.js-offcanvas-close {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-right: .5rem;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+}
+.js-offcanvas-close:hover {
+    cursor: pointer;
+}
+#off-canvas-bottom {
+    background-color: #ffe082;
+    z-index: 1080;
+    height: auto!important;
+}
+.fly_subscribe .form-control,
+.fly_subscribe .btn {
+    margin-bottom: .5rem;
+}
+.fly_subscribe .social {
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-image: url('/img/social_sprite.png');
+}
+.fly_subscribe .vk {
+    background-position: 0 0;
+}
+.fly_subscribe .ok {
+    background-position: -51px 0;
+}
+.fly_subscribe .fb {
+    background-position: -102px 0;
+}
