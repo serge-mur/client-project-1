@@ -11,6 +11,24 @@ $(document).ready(function () {
         triggerButton: '#off-canvas-bottom-trigger'
     });
 
+    // Определяем мобилу
+    var isMobile = false;
+    if (window.matchMedia("screen and (min-width: 1px) and (max-width:575px)").matches) {
+        isMobile = true;
+    }
+    console.log('isMobile: ', isMobile);
+
+    // подписка открыта при загрузке, если нет куки subscribe_hide на сутки
+    var dataOffcanvas = $('#off-canvas-bottom').data('offcanvas-component');
+    if (!Cookies.get('subscribe_hide')) {
+        dataOffcanvas.open();
+    };
+    dataOffcanvas.onClose  = function() {
+        if (!Cookies.get('subscribe_hide')) {
+            Cookies.set('subscribe_hide', 1, {expires: 1, path: '/'});
+        };
+    };
+
     // sliders
     $('.card-slider').slick({
         dots: true,
@@ -93,7 +111,7 @@ $(document).ready(function () {
         arrows: true,
         infinite: false,
         dots: true,
-    });    
+    });
 
 
     // if (window.matchMedia("screen and (min-width: 1px) and (max-width:991px)").matches) {
