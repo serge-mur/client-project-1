@@ -1301,6 +1301,9 @@ About page styles
     opacity: .5rem;
     z-index: 1050;
 }
+.c-offcanvas-bg-bottom {
+    background-color: transparent;
+}
 #off-canvas-bottom-trigger:hover {
     cursor: pointer;
 }

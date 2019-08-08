@@ -8,19 +8,26 @@ $(document).ready(function () {
     // Bottom fly form subscribe
     $('#off-canvas-bottom').offcanvas({
         modifiers: 'bottom, overlay',
-        triggerButton: '#off-canvas-bottom-trigger'
+        triggerButton: '#off-canvas-bottom-trigger',
+        modalClass: "c-offcanvas-bg-bottom"
     });
+
+
 
     // Определяем мобилу
     var isMobile = false;
     if (window.matchMedia("screen and (min-width: 1px) and (max-width:575px)").matches) {
         isMobile = true;
     }
-    console.log('isMobile: ', isMobile);
+    // console.log('isMobile: ', isMobile);
+    if(!isMobile) {
+        $('#off-canvas-bottom-trigger').hide();
+    }
 
     // подписка открыта при загрузке, если нет куки subscribe_hide на сутки
     var dataOffcanvas = $('#off-canvas-bottom').data('offcanvas-component');
-    if (!Cookies.get('subscribe_hide')) {
+
+    if ((!Cookies.get('subscribe_hide')) && (isMobile)) {
         dataOffcanvas.open();
     };
     dataOffcanvas.onClose  = function() {
